@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <EditText
+        android:id="@+id/editTextWordToEnter"
+        android:layout_width="265dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/gameGuideline6"
+        app:layout_constraintStart_toStartOf="@+id/gameGuideline10" />
+
+    <Button
+        android:id="@+id/buttonGameResetBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET board  (lose 5 pts)"
+        app:layout_constraintBottom_toTopOf="@+id/gameGuideline7"
+        app:layout_constraintStart_toStartOf="@+id/gameGuideline10"
+        app:layout_constraintTop_toTopOf="@+id/gameGuideline6" />
+
+    <TextView
+        android:id="@+id/textViewGameInstructionToEnterWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SWIPE on Letters or ENTER found word below"
+        app:layout_constraintBottom_toTopOf="@+id/gameGuideline5"
+        app:layout_constraintStart_toStartOf="@+id/gameGuideline10"
+        app:layout_constraintTop_toTopOf="@+id/gameGuideline4" />
+
+    <TextView
+        android:id="@+id/textViewGameCurrentScoreKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        app:layout_constraintStart_toStartOf="@+id/gameGuideline12"
+        app:layout_constraintTop_toTopOf="@+id/gameGuideline2" />
+
+    <TableLayout
+        android:id="@+id/tableLayoutBoard"
+        android:layout_width="365dp"
+        android:layout_height="368dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewGameInstructionToEnterWord"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGameTimeRemainingValue">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonGameEnter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        app:layout_constraintBottom_toTopOf="@+id/gameGuideline6"
+        app:layout_constraintEnd_toStartOf="@+id/gameGuideline13"
+        app:layout_constraintTop_toTopOf="@+id/gameGuideline5" />
+
+    <Button
+        android:id="@+id/buttonGameFinishEarly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINISH EARLY"
+        app:layout_constraintBottom_toTopOf="@+id/gameGuideline7"
+        app:layout_constraintEnd_toStartOf="@+id/gameGuideline13"
+        app:layout_constraintTop_toTopOf="@+id/gameGuideline6" />
+
+    <TextView
+        android:id="@+id/textViewGameTimeRemainingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 min 30 secs"
+        android:textColor="#E91E63"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/gameGuideline12"
+        app:layout_constraintStart_toEndOf="@+id/textViewGameTimeRemainingKey"
+        app:layout_constraintTop_toTopOf="@+id/gameGuideline2" />
+
+    <TextView
+        android:id="@+id/textViewGameTimeRemainingKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time remaining: "
+        app:layout_constraintEnd_toStartOf="@+id/gameGuideline11"
+        app:layout_constraintStart_toStartOf="@+id/gameGuideline10"
+        app:layout_constraintTop_toTopOf="@+id/gameGuideline2" />
+
+    <TextView
+        android:id="@+id/textViewGameCurrentScoreValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13"
+        android:textColor="#F44336"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/gameGuideline13"
+        app:layout_constraintStart_toEndOf="@+id/textViewGameCurrentScoreKey"
+        app:layout_constraintTop_toTopOf="@+id/gameGuideline2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.65" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.73
+" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="613dp"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.35"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameGuideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

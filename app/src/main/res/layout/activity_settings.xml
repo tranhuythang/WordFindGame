@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:scrollbars="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.0" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.02" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.10" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.18" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.25" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.30" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.80" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="1.0" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.0"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.02"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.98"
+                app:layout_constraintGuide_begin="20dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="144dp"
+                app:layout_constraintGuide_percent="0.35" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="192dp"
+                app:layout_constraintGuide_percent="0.65" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/settingsGuideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="1.0"
+                app:layout_constraintGuide_begin="20dp" />
+
+
+            <TextView
+                android:id="@+id/textViewSettingsLetterWeights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight of letters (1 to 5)"
+                app:layout_constraintBottom_toTopOf="@+id/settingsGuideline6"
+                app:layout_constraintStart_toStartOf="@+id/settingsGuideline11"
+                app:layout_constraintTop_toTopOf="@+id/settingsGuideline5" />
+
+            <TextView
+                android:id="@+id/textViewSettingsTimeDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Duration (min):"
+                app:layout_constraintBottom_toTopOf="@+id/settingsGuideline4"
+                app:layout_constraintStart_toStartOf="@+id/settingsGuideline11"
+                app:layout_constraintTop_toTopOf="@+id/settingsGuideline3" />
+
+            <TextView
+                android:id="@+id/textViewSettingsBoardSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Board Size: "
+                app:layout_constraintBottom_toTopOf="@+id/settingsGuideline5"
+                app:layout_constraintStart_toStartOf="@+id/settingsGuideline11"
+                app:layout_constraintTop_toTopOf="@+id/settingsGuideline4" />
+
+            <SeekBar
+                android:id="@+id/seekBarSettingsTimeDuration"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="185dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="4dp"
+                android:max="4"
+                android:progress="2"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@+id/settingsGuideline4"
+                app:layout_constraintStart_toEndOf="@+id/textViewSettingsTimeDuration" />
+
+            <Button
+                android:id="@+id/buttonSettingsMainMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:text="Main Menu"
+                app:layout_constraintEnd_toStartOf="@+id/settingsGuideline13"
+                app:layout_constraintStart_toStartOf="@+id/settingsGuideline11"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayoutSettingsLetterWeights" />
+
+            <TextView
+                android:id="@+id/textViewSettingsHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GAME SETTINGS"
+                android:textSize="18sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toTopOf="@+id/settingsGuideline3"
+                app:layout_constraintEnd_toStartOf="@+id/settingsGuideline15"
+                app:layout_constraintStart_toStartOf="@+id/settingsGuideline10"
+                app:layout_constraintTop_toTopOf="@+id/settingsGuideline2" />
+
+
+            <Button
+                android:id="@+id/buttonSettingsReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="RESET"
+                app:layout_constraintEnd_toStartOf="@+id/settingsGuideline12"
+                app:layout_constraintStart_toStartOf="@+id/settingsGuideline14"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayoutSettingsLetterWeights" />
+
+            <Button
+                android:id="@+id/buttonSettingsSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="SAVE"
+                app:layout_constraintEnd_toStartOf="@+id/settingsGuideline14"
+                app:layout_constraintStart_toStartOf="@+id/settingsGuideline13"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayoutSettingsLetterWeights" />
+
+            <TableLayout
+                android:id="@+id/tableLayoutSettingsLetterWeights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/settingsGuideline12"
+                app:layout_constraintStart_toStartOf="@+id/settingsGuideline11"
+                app:layout_constraintTop_toTopOf="@+id/settingsGuideline6">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:text=" A " />
+
+                    <Spinner
+                        android:id="@+id/spinnerA"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" B " />
+
+                    <Spinner
+                        android:id="@+id/spinnerB"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" C " />
+
+                    <Spinner
+                        android:id="@+id/spinnerC"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:text=" D " />
+
+                    <Spinner
+                        android:id="@+id/spinnerD"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" E " />
+
+                    <Spinner
+                        android:id="@+id/spinnerE"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" F " />
+
+                    <Spinner
+                        android:id="@+id/spinnerF"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:text=" G " />
+
+                    <Spinner
+                        android:id="@+id/spinnerG"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" H " />
+
+                    <Spinner
+                        android:id="@+id/spinnerH"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" I " />
+
+                    <Spinner
+                        android:id="@+id/spinnerI"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:text=" J " />
+
+                    <Spinner
+                        android:id="@+id/spinnerJ"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" K " />
+
+                    <Spinner
+                        android:id="@+id/spinnerK"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" L " />
+
+                    <Spinner
+                        android:id="@+id/spinnerL"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:text=" M " />
+
+                    <Spinner
+                        android:id="@+id/spinnerM"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" N " />
+
+                    <Spinner
+                        android:id="@+id/spinnerN"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" O " />
+
+                    <Spinner
+                        android:id="@+id/spinnerO"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:text=" P " />
+
+                    <Spinner
+                        android:id="@+id/spinnerP"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" Qu " />
+
+                    <Spinner
+                        android:id="@+id/spinnerQu"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" R " />
+
+                    <Spinner
+                        android:id="@+id/spinnerR"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:text=" S " />
+
+                    <Spinner
+                        android:id="@+id/spinnerS"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" T " />
+
+                    <Spinner
+                        android:id="@+id/spinnerT"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" U " />
+
+                    <Spinner
+                        android:id="@+id/spinnerU"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:text=" V " />
+
+                    <Spinner
+                        android:id="@+id/spinnerV"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" W " />
+
+                    <Spinner
+                        android:id="@+id/spinnerW"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" X " />
+
+                    <Spinner
+                        android:id="@+id/spinnerX"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView android:text=" Y " />
+
+                    <Spinner
+                        android:id="@+id/spinnerY"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+
+                    <TextView android:text=" Z " />
+
+                    <Spinner
+                        android:id="@+id/spinnerZ"
+                        android:layout_width="75dp"
+                        android:layout_height="30dp"
+                        android:drawSelectorOnTop="true"
+                        android:entries="@array/array_name" />
+                </TableRow>
+
+            </TableLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupSettingsBoardSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/settingsGuideline5"
+                app:layout_constraintTop_toBottomOf="@+id/settingsGuideline4"
+                app:layout_constraintLeft_toLeftOf="@+id/settingsGuideline13"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioButtonSettingsBoardSize4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="4"
+                    tools:layout_editor_absoluteX="152dp"
+                    tools:layout_editor_absoluteY="151dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSettingsBoardSize5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    tools:layout_editor_absoluteX="192dp"
+                    tools:layout_editor_absoluteY="151dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSettingsBoardSize6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    tools:layout_editor_absoluteX="232dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSettingsBoardSize7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    tools:layout_editor_absoluteX="272dp"
+                    tools:layout_editor_absoluteY="151dp" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonSettingsBoardSize8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    tools:layout_editor_absoluteX="312dp"
+                    tools:layout_editor_absoluteY="151dp" />
+            </RadioGroup>
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="12dp"
+                android:text="1"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarSettingsTimeDuration"
+                app:layout_constraintStart_toStartOf="@+id/seekBarSettingsTimeDuration"
+                app:layout_constraintTop_toTopOf="@+id/settingsGuideline3" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="52dp"
+                android:text="2"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarSettingsTimeDuration"
+                app:layout_constraintStart_toStartOf="@+id/seekBarSettingsTimeDuration"
+                app:layout_constraintTop_toTopOf="@+id/settingsGuideline3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="88dp"
+                android:text="3"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarSettingsTimeDuration"
+                app:layout_constraintStart_toStartOf="@+id/seekBarSettingsTimeDuration"
+                app:layout_constraintTop_toTopOf="@+id/settingsGuideline3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="128dp"
+                android:text="4"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarSettingsTimeDuration"
+                app:layout_constraintStart_toStartOf="@+id/seekBarSettingsTimeDuration"
+                app:layout_constraintTop_toTopOf="@+id/settingsGuideline3"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="8dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="164dp"
+                android:text="5"
+                app:layout_constraintBottom_toTopOf="@+id/seekBarSettingsTimeDuration"
+                app:layout_constraintStart_toStartOf="@+id/seekBarSettingsTimeDuration"
+                app:layout_constraintTop_toTopOf="@+id/settingsGuideline3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

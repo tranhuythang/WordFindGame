@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Word Finder</string>
+    <string name="play_a_new_game">PLAY A NEW GAME</string>
+    <string name="adjust_settings">ADJUST SETTINGS</string>
+    <string name="view_statistics">VIEW STATISTICS</string>
+    <string name="exit">EXIT</string>
+</resources>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameResultsActivity">
+
+    <Button
+        android:id="@+id/buttonGameResultsPlayANewGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY A NEW GAME"
+        app:layout_constraintBottom_toTopOf="@+id/gameResultsGuideline5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/gameResultsGuideline10"
+        app:layout_constraintTop_toTopOf="@+id/gameResultsGuideline4" />
+
+    <Button
+        android:id="@+id/buttonGameResultsMainMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MAIN MENU"
+        app:layout_constraintBottom_toTopOf="@+id/gameResultsGuideline5"
+        app:layout_constraintEnd_toStartOf="@+id/gameResultsGuideline10"
+        app:layout_constraintStart_toStartOf="@+id/gameResultsGuideline8"
+        app:layout_constraintTop_toTopOf="@+id/gameResultsGuideline4" />
+
+    <TextView
+        android:id="@+id/textViewGameResultsScoreResultKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your score is:"
+        app:layout_constraintBottom_toTopOf="@+id/gameResultsGuideline3"
+        app:layout_constraintEnd_toStartOf="@+id/gameResultsGuideline10"
+        app:layout_constraintStart_toStartOf="@+id/gameResultsGuideline9"
+        app:layout_constraintTop_toTopOf="@+id/gameResultsGuideline2" />
+
+    <TextView
+        android:id="@+id/textViewGameResultsHighestScoringWordKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Highest scoring word is: "
+        app:layout_constraintBottom_toTopOf="@+id/gameResultsGuideline4"
+        app:layout_constraintEnd_toStartOf="@+id/gameResultsGuideline10"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/gameResultsGuideline9"
+        app:layout_constraintTop_toTopOf="@+id/gameResultsGuideline3"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <TextView
+        android:id="@+id/textViewGameResultsScoreResultValue"
+        android:layout_width="100dp"
+        android:layout_height="15dp"
+        android:text="36"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/gameResultsGuideline3"
+        app:layout_constraintEnd_toStartOf="@+id/gameResultsGuideline11"
+        app:layout_constraintStart_toStartOf="@+id/gameResultsGuideline10"
+        app:layout_constraintTop_toTopOf="@+id/gameResultsGuideline2" />
+
+    <TextView
+        android:id="@+id/textViewGameResultsHighestScoringWordValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TABLE"
+        android:textColor="#E91E63"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/gameResultsGuideline4"
+        app:layout_constraintEnd_toStartOf="@+id/gameResultsGuideline11"
+        app:layout_constraintStart_toEndOf="@+id/textViewGameResultsHighestScoringWordKey"
+        app:layout_constraintTop_toTopOf="@+id/gameResultsGuideline3"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <Button
+        android:id="@+id/buttonGameResultsExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        app:layout_constraintBottom_toTopOf="@+id/gameResultsGuideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gameResultsGuideline5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="192dp"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="375dp"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="2.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.0"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gameResultsGuideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1.0"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
